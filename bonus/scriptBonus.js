@@ -4,6 +4,7 @@ btn.addEventListener("click", function(){
   var numeri = document.getElementById('title');
 
 
+
   for (var i = 1; i <= 100; i++) {
     if ((i%3 == 0) && (i%5 == 0)) {
       numeri.innerHTML += "<li class=\"fizzbuzz\">FizzBuzz</li>";
@@ -18,4 +19,5 @@ btn.addEventListener("click", function(){
       numeri.innerHTML += "<li>" + i + "</li>";
     }
   }
+  btn.className = "hidden";
 });
