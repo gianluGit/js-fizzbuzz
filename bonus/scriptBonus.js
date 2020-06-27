@@ -6,16 +6,16 @@ btn.addEventListener("click", function(){
 
   for (var i = 1; i <= 100; i++) {
     if ((i%3 == 0) && (i%5 == 0)) {
-      numeri.innerHTML += "<br>" + "FizzBuzz";
+      numeri.innerHTML += "<li class=\"fizzbuzz\">FizzBuzz</li>";
 
     } else if (i%3 == 0) {
-      numeri.innerHTML += "<br>" + "Fizz";
+      numeri.innerHTML += "<li class=\"fizz\">Fizz</li>";
 
     } else if (i%5 == 0) {
-      numeri.innerHTML += "<br>" + "Buzz";
+      numeri.innerHTML += "<li class=\"buzz\">Buzz</li>";
 
     } else {
-      numeri.innerHTML += "<br>" + i;
+      numeri.innerHTML += "<li>" + i + "</li>";
     }
   }
 });
